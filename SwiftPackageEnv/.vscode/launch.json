@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Test SwiftPackageEnv",
+            "program": "${workspaceFolder:SwiftPackageEnv}/.build/debug/SwiftPackageEnvPackageTests.xctest",
+            "cwd": "${workspaceFolder:SwiftPackageEnv}",
+            "preLaunchTask": "swift: Build All"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug SwiftPackageEnv",
+            "program": "${workspaceFolder:SwiftPackageEnv}/.build/debug/SwiftPackageEnv",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftPackageEnv}",
+            "preLaunchTask": "swift: Build Debug SwiftPackageEnv"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release SwiftPackageEnv",
+            "program": "${workspaceFolder:SwiftPackageEnv}/.build/release/SwiftPackageEnv",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftPackageEnv}",
+            "preLaunchTask": "swift: Build Release SwiftPackageEnv"
+        }
+    ]
+}
